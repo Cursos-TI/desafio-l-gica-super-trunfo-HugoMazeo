@@ -139,7 +139,12 @@ int main(void) {
         int comparary;
         scanf("%d",&comparary);
 
-        printf("Deseja comparar qual propriedade?\n"); //escolhe qual tipo de comparação vai ser feita
+        int cidadex = 0;
+        int cidadey = 0;
+
+        while (1)
+        {
+            printf("Deseja comparar qual propriedade?\n"); //escolhe qual tipo de comparação vai ser feita
         printf("Densidade Populacional - digite A\n");
         printf("PIB per Capita - digite B\n");
         printf("Super Poder (soma de todas as propriedades) - digite C\n");
@@ -149,12 +154,7 @@ int main(void) {
         while ((getchar()) != '\n');
         scanf("%c",&comparar);
         comparar = toupper(comparar);
-
-        int cidadex = 0;
-        int cidadey = 0;
-
-        while (1)
-        {
+        
         if(comparar == 'A')//se "A" a comparação sera feita por densidade populacional
         {
             if (cartas[compararx].denspopul > cartas[comparary].denspopul) // se positivo x perde e y ganha
