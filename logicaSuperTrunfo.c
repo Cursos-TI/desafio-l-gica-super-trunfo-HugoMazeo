@@ -139,7 +139,7 @@ int main(void) {
         int comparary;
         scanf("%d",&comparary);
 
-        int cidadex = 0;
+        int cidadex = 0; // integers que usarei pra poder fazer uma melhor de 3 entre as comparações 
         int cidadey = 0;
 
         while (1)
@@ -255,11 +255,11 @@ int main(void) {
         else if(cidadey >=2)
         {
             printf("A cidade %s ganhou na melhor de 3!",cartas[comparary].nome);
-            cidadex =0;
+            cidadex =0; //resetando os integers para poder recomeçar a melhor de 3
             cidadey =0;
             break;
         }
-        printf("Escolha um segundo atributo para comparar também!");
+        printf("Escolha um segundo atributo para comparar também!"); // volta o loop para escolher uma segunda opção
         }
     }
 
